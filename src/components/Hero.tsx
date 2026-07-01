@@ -69,6 +69,7 @@ export default function Hero() {
       {/* Background image with parallax */}
       <motion.div style={{ y: bgY }} className="absolute inset-0 z-0 pointer-events-none will-change-transform">
         <picture>
+          <source srcSet="/herosss.avif" type="image/avif" />
           <source srcSet="/herosss.webp" type="image/webp" />
           <img
             src="/herosss.jpg"
