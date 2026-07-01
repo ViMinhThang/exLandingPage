@@ -8,7 +8,7 @@ export default function EscapeSection() {
         <div className="w-full h-full rounded-full bg-gradient-to-tr from-orange-400/20 via-orange-500/10 to-transparent blur-3xl" />
       </div>
       <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
-        <motion.p
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -18,7 +18,7 @@ export default function EscapeSection() {
           Escape{' '}
           <span className="inline-block h-10 760:h-14 900:h-16 w-28 760:w-36 900:w-44 rounded-full overflow-hidden align-middle -mt-1 border-2 border-ink/10 dark:border-bone/10 shadow-md">
             <img
-              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"
+              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=200&q=75"
               alt=""
               loading="lazy"
               decoding="async"
@@ -28,7 +28,7 @@ export default function EscapeSection() {
           <br />the<br />generic<br />AI{' '}
           <span className="inline-block h-10 760:h-14 900:h-16 w-28 760:w-36 900:w-44 rounded-full overflow-hidden align-middle -mt-1 border-2 border-ink/10 dark:border-bone/10 shadow-md">
             <img
-              src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
+              src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=200&q=75"
               alt=""
               loading="lazy"
               decoding="async"
@@ -36,7 +36,7 @@ export default function EscapeSection() {
             />
           </span>
           <br />slop.
-        </motion.p>
+        </motion.h2>
       </div>
     </section>
   )

@@ -4,14 +4,14 @@ export default function Sponsor() {
   return (
     <section className="py-20 bg-bone dark:bg-ink text-ink dark:text-bone transition-colors duration-300">
       <div className="max-w-5xl mx-auto px-6 text-left">
-        <motion.p
+        <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="font-mono text-2xl uppercase tracking-widest text-ink dark:text-bone mb-8 font-semibold"
         >
           Partners
-        </motion.p>
+        </motion.h2>
 
         <div className="flex flex-col 600:flex-row items-start gap-8">
           <SponsorCard

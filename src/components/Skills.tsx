@@ -123,9 +123,9 @@ function SkillCard({ skill, icon: Icon, index }: { skill: typeof skills[number];
       <span className="font-mono text-[10px] uppercase tracking-wider text-grey px-2 py-0.5 bg-black/3 dark:bg-white/5 rounded-full self-start mb-2">
         {skill.tag}
       </span>
-      <p className="font-sans text-[15px] font-semibold text-ink dark:text-bone mb-1 leading-snug">
-        {skill.name}
-      </p>
+                  <h3 className="font-sans text-[15px] font-semibold text-ink dark:text-bone mb-1 leading-snug">
+                    {skill.name}
+                  </h3>
       <p className="text-[12px] text-grey leading-relaxed">
         {skill.desc}
       </p>

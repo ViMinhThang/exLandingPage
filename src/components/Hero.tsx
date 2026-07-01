@@ -68,12 +68,15 @@ export default function Hero() {
     <section ref={sectionRef} className="relative min-h-[100dvh] flex items-center pt-28 pb-16 overflow-hidden bg-bone dark:bg-ink text-ink dark:text-bone transition-colors duration-300">
       {/* Background image with parallax */}
       <motion.div style={{ y: bgY }} className="absolute inset-0 z-0 pointer-events-none will-change-transform">
-        <img
-          src="/herosss.jpg"
-          alt=""
-          fetchPriority="high"
-          className="w-full h-[120%] object-cover"
-        />
+        <picture>
+          <source srcSet="/herosss.webp" type="image/webp" />
+          <img
+            src="/herosss.jpg"
+            alt=""
+            fetchPriority="high"
+            className="w-full h-[120%] object-cover"
+          />
+        </picture>
         <div className="absolute inset-0 bg-bone/30 dark:bg-ink/60" />
       </motion.div>
 
@@ -190,7 +193,8 @@ export default function Hero() {
                 <motion.img
                   key={src}
                   src={src}
-                  alt=""
+                  alt={`EXCELSIOR screenshot ${i + 1}`}
+                  sizes="(max-width: 860px) 50vw, 33vw"
                   loading={i === 0 ? 'eager' : 'lazy'}
                   className={`absolute w-full h-full object-contain rounded-xl ${
                     i === 0 ? '-rotate-[12deg] -translate-x-8 translate-y-4' :

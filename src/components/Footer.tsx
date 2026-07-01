@@ -19,13 +19,13 @@ export default function Footer() {
               An AI coding agent for those who want to code better — without typing more.
             </p>
             <div className="flex items-center gap-3 mt-6">
-              <a href="#" className="text-grey hover:text-ink dark:hover:text-bone transition-colors" aria-label="GitHub">
+              <a href="#" className="text-grey hover:text-ink dark:hover:text-bone transition-colors" aria-label="GitHub repository">
                 <Code2 size={16} strokeWidth={1.5} />
               </a>
-              <a href="#" className="text-grey hover:text-ink dark:hover:text-bone transition-colors" aria-label="Twitter">
+              <a href="#" className="text-grey hover:text-ink dark:hover:text-bone transition-colors" aria-label="Follow on Twitter">
                 <MessageCircle size={16} strokeWidth={1.5} />
               </a>
-              <a href="#" className="text-grey hover:text-ink dark:hover:text-bone transition-colors" aria-label="Email">
+              <a href="#" className="text-grey hover:text-ink dark:hover:text-bone transition-colors" aria-label="Send us an email">
                 <Mail size={16} strokeWidth={1.5} />
               </a>
             </div>
