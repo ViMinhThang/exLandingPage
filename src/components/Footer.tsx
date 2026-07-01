@@ -35,7 +35,7 @@ export default function Footer() {
             
             {/* Column 1 */}
             <div className="flex flex-col gap-4">
-              <h4 className="font-mono text-[10px] uppercase tracking-wider text-grey">Product</h4>
+              <h2 className="font-mono text-[10px] uppercase tracking-wider text-grey">Product</h2>
               <nav className="flex flex-col gap-2.5">
                 <a href="#features" className="text-xs text-ink dark:text-bone hover:text-ink dark:hover:text-bone transition-colors">
                   Features
@@ -51,7 +51,7 @@ export default function Footer() {
 
             {/* Column 2 */}
             <div className="flex flex-col gap-4">
-              <h4 className="font-mono text-[10px] uppercase tracking-wider text-grey">Company</h4>
+              <h2 className="font-mono text-[10px] uppercase tracking-wider text-grey">Company</h2>
               <nav className="flex flex-col gap-2.5">
                 <a href="#" className="text-xs text-ink dark:text-bone hover:text-ink dark:hover:text-bone transition-colors">
                   About us
@@ -67,7 +67,7 @@ export default function Footer() {
 
             {/* Column 3 */}
             <div className="flex flex-col gap-4">
-              <h4 className="font-mono text-[10px] uppercase tracking-wider text-grey">Legal</h4>
+              <h2 className="font-mono text-[10px] uppercase tracking-wider text-grey">Legal</h2>
               <nav className="flex flex-col gap-2.5">
                 <a href="#" className="text-xs text-ink dark:text-bone hover:text-ink dark:hover:text-bone transition-colors">
                   Privacy policy

@@ -197,7 +197,7 @@ export default function PreorderForm() {
                 </AnimatePresence>
 
                 {/* Footer fine print */}
-                <p className="font-sans text-[10px] text-grey/50 leading-relaxed text-center">
+                <p className="font-sans text-[10px] text-muted leading-relaxed text-center">
                   No spam. Data is securely sent to our CRM system and never shared with third parties.
                 </p>
 
