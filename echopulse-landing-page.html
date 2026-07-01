@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO META ===== -->
+<title>EchoPulse — Nhẫn thông minh theo dõi nhịp sinh học | Titanium Health Ring</title>
+<meta name="description" content="EchoPulse là nhẫn thông minh titanium theo dõi giấc ngủ, nhịp tim (HRV), nhiệt độ cơ thể và độ hồi phục 24/7 — pin 7 ngày, chống nước 100m, không màn hình, không phiền nhiễu.">
+<meta name="keywords" content="nhẫn thông minh, smart ring, theo dõi giấc ngủ, HRV, thiết bị đeo sức khỏe, EchoPulse">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://echopulse.example.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="EchoPulse — Nhẫn thông minh theo dõi nhịp sinh học">
+<meta property="og:description" content="Titanium. 7 ngày pin. Không màn hình. Theo dõi giấc ngủ, HRV, nhiệt độ và độ hồi phục chính xác cấp lâm sàng, gọn trong một chiếc nhẫn 2.4g.">
+<meta property="og:image" content="https://echopulse.example.com/og-image.jpg">
+<meta property="og:url" content="https://echopulse.example.com/">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:site_name" content="EchoPulse">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EchoPulse — Nhẫn thông minh theo dõi nhịp sinh học">
+<meta name="twitter:description" content="Titanium. 7 ngày pin. Không màn hình. Theo dõi giấc ngủ, HRV, nhiệt độ và độ hồi phục chính xác cấp lâm sàng.">
+<meta name="twitter:image" content="https://echopulse.example.com/og-image.jpg">
+
+<!-- Favicon (inline SVG, zero extra request) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='38' fill='none' stroke='%23C08552' stroke-width='10'/%3E%3C/svg%3E">
+
+<!-- ===== PERFORMANCE: preconnect ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Structured data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "EchoPulse Smart Ring",
+  "description": "Nhẫn thông minh titanium theo dõi giấc ngủ, HRV, nhiệt độ cơ thể và độ hồi phục.",
+  "brand": { "@type": "Brand", "name": "EchoPulse" },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "299",
+    "availability": "https://schema.org/PreOrder"
+  }
+}
+</script>
+
+<style>
+  /* Fonts loaded via <link> above with font-display:swap (set in the Google
+     Fonts query string) — this avoids render-blocking and layout shift. */
+
+  :root{
+    --ink:        #0B0D0E;
+    --ink-soft:   #15181A;
+    --bone:       #F5F1E8;
+    --bone-dim:   #E9E3D5;
+    --brass:      #C08552;
+    --brass-soft: #D9A876;
+    --sage:       #4A5D52;
+    --sage-soft:  #6B8177;
+    --grey:       #8A8580;
+    --line:       rgba(245,241,232,0.12);
+    --line-dark:  rgba(11,13,14,0.10);
+
+    --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', monospace;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  html{ scroll-behavior:smooth; }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; }
+  }
+
+  body{
+    background:var(--ink);
+    color:var(--bone);
+    font-family:var(--font-body);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  button{ font-family:inherit; cursor:pointer; border:none; background:none; }
+
+  ::selection{ background:var(--brass); color:var(--ink); }
+
+  :focus-visible{
+    outline:2px solid var(--brass);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--brass);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:'';
+    width:16px; height:1px;
+    background:var(--brass);
+  }
+
+  h1,h2,h3{ font-family:var(--font-display); font-weight:600; letter-spacing:-0.01em; }
+
+  /* ===================== NAV ===================== */
+  header.nav{
+    position:fixed; top:0; left:0; right:0;
+    z-index:100;
+    background:rgba(11,13,14,0.72);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 24px;
+    max-width:1180px; margin:0 auto;
+  }
+  .logo{
+    font-family:var(--font-display);
+    font-size:20px; font-weight:600;
+    display:flex; align-items:center; gap:10px;
+  }
+  .logo-ring{
+    width:20px; height:20px;
+    border:2.5px solid var(--brass);
+    border-radius:50%;
+    flex-shrink:0;
+  }
+  .nav-links{ display:flex; gap:36px; font-size:14px; }
+  .nav-links a{ color:var(--grey); transition:color 0.2s; }
+  .nav-links a:hover{ color:var(--bone); }
+  .nav-cta{
+    font-size:13px; font-family:var(--font-mono); letter-spacing:0.04em;
+    padding:10px 20px;
+    border:1px solid var(--brass);
+    color:var(--brass);
+    border-radius:100px;
+    transition:background 0.2s, color 0.2s;
+  }
+  .nav-cta:hover{ background:var(--brass); color:var(--ink); }
+  .nav-mobile-toggle{ display:none; }
+
+  @media (max-width:820px){
+    .nav-links{ display:none; }
+    .nav-mobile-toggle{
+      display:block; width:22px; height:16px; position:relative;
+    }
+    .nav-mobile-toggle span{
+      position:absolute; left:0; right:0; height:2px; background:var(--bone);
+    }
+    .nav-mobile-toggle span:nth-child(1){ top:0; }
+    .nav-mobile-toggle span:nth-child(2){ top:7px; }
+    .nav-mobile-toggle span:nth-child(3){ top:14px; }
+  }
+
+  /* ===================== HERO ===================== */
+  .hero{
+    position:relative;
+    min-height:100svh;
+    display:flex; align-items:center;
+    padding:140px 0 80px;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:60px;
+    align-items:center;
+    width:100%;
+  }
+  .hero-eyebrow{ margin-bottom:24px; }
+  .hero h1{
+    font-size:clamp(40px, 6.2vw, 76px);
+    line-height:0.98;
+    margin-bottom:26px;
+  }
+  .hero h1 em{
+    font-style:italic;
+    color:var(--brass);
+  }
+  .hero p.lede{
+    font-size:18px;
+    color:var(--grey);
+    max-width:460px;
+    margin-bottom:36px;
+    line-height:1.6;
+  }
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-bottom:44px; }
+
+  .btn-primary{
+    background:var(--brass);
+    color:var(--ink);
+    padding:16px 30px;
+    border-radius:100px;
+    font-size:14px; font-weight:600;
+    letter-spacing:0.02em;
+    display:inline-flex; align-items:center; gap:10px;
+    transition:transform 0.25s cubic-bezier(.2,.8,.2,1), background 0.25s;
+  }
+  .btn-primary:hover{ background:var(--brass-soft); transform:translateY(-2px); }
+
+  .btn-ghost{
+    color:var(--bone);
+    padding:16px 22px;
+    font-size:14px;
+    display:inline-flex; align-items:center; gap:8px;
+    border-bottom:1px solid var(--line);
+    transition:border-color 0.2s, color 0.2s;
+  }
+  .btn-ghost:hover{ border-color:var(--brass); color:var(--brass); }
+
+  .hero-proof{
+    display:flex; gap:32px;
+    padding-top:28px;
+    border-top:1px solid var(--line);
+  }
+  .hero-proof div{ font-family:var(--font-mono); }
+  .hero-proof .num{ font-size:22px; color:var(--bone); display:block; }
+  .hero-proof .label{ font-size:11px; color:var(--grey); text-transform:uppercase; letter-spacing:0.08em; }
+
+  /* Hero visual: the ring + waveform */
+  .hero-visual{
+    position:relative;
+    aspect-ratio:1/1;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .ring-orbit{
+    position:relative;
+    width:78%; aspect-ratio:1/1;
+  }
+  .ring-orbit svg{ width:100%; height:100%; }
+
+  .hero-waveform{
+    position:absolute;
+    left:0; right:0; bottom:14%;
+    height:60px;
+    opacity:0.9;
+  }
+  .hero-waveform svg{ width:100%; height:100%; }
+  .wave-path{
+    stroke:var(--sage-soft);
+    stroke-width:1.6;
+    fill:none;
+    stroke-linecap:round;
+    stroke-dasharray:1200;
+    stroke-dashoffset:1200;
+    animation:draw-wave 3.2s ease-out forwards 0.5s, wave-drift 5s ease-in-out infinite 3.7s;
+  }
+  @keyframes draw-wave{ to{ stroke-dashoffset:0; } }
+  @keyframes wave-drift{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-3px); }
+  }
+
+  .hero-bg-glow{
+    position:absolute;
+    top:-10%; right:-10%;
+    width:60%; height:70%;
+    background:radial-gradient(circle, rgba(192,133,82,0.14) 0%, transparent 70%);
+    pointer-events:none;
+  }
+
+  @media (max-width:900px){
+    .hero-grid{ grid-template-columns:1fr; gap:56px; }
+    .hero{ padding-top:120px; text-align:left; }
+    .hero-visual{ max-width:340px; margin:0 auto; }
+    .hero-proof{ flex-wrap:wrap; row-gap:18px; }
+  }
+
+  /* ===================== MARQUEE STRIP ===================== */
+  .marquee-strip{
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:18px 0;
+    overflow:hidden;
+    background:var(--ink-soft);
+  }
+  .marquee-track{
+    display:flex; gap:64px;
+    width:max-content;
+    animation:marquee 28s linear infinite;
+    font-family:var(--font-mono);
+    font-size:13px;
+    color:var(--grey);
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+  }
+  .marquee-track span{ white-space:nowrap; }
+  @keyframes marquee{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+
+  /* ===================== SECTION SHARED ===================== */
+  section{ padding:120px 0; position:relative; }
+  .section-head{ max-width:640px; margin-bottom:72px; }
+  .section-head h2{
+    font-size:clamp(32px, 4vw, 48px);
+    line-height:1.05;
+    margin-top:18px;
+  }
+  .section-head p{
+    color:var(--grey);
+    font-size:16px;
+    margin-top:18px;
+    max-width:480px;
+  }
+
+  @media (max-width:700px){
+    section{ padding:80px 0; }
+    .section-head{ margin-bottom:48px; }
+  }
+
+  /* ===================== FEATURES ===================== */
+  .features-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .feature-card{
+    background:var(--ink);
+    padding:40px 32px;
+    transition:background 0.3s;
+  }
+  .feature-card:hover{ background:var(--ink-soft); }
+  .feature-icon{
+    width:44px; height:44px;
+    margin-bottom:28px;
+  }
+  .feature-icon svg{ width:100%; height:100%; }
+  .feature-card h3{
+    font-size:20px;
+    margin-bottom:12px;
+    font-weight:600;
+  }
+  .feature-card p{
+    color:var(--grey);
+    font-size:14.5px;
+    line-height:1.65;
+  }
+
+  @media (max-width:900px){
+    .features-grid{ grid-template-columns:repeat(2, 1fr); }
+  }
+  @media (max-width:600px){
+    .features-grid{ grid-template-columns:1fr; }
+  }
+
+  /* ===================== SPEC DIAL (signature element) ===================== */
+  .spec-section{
+    background:var(--bone);
+    color:var(--ink);
+    border-radius:32px;
+    margin:0 24px;
+    padding:100px 0;
+    max-width:1180px;
+    margin-left:auto; margin-right:auto;
+  }
+  .spec-section .section-head p{ color:var(--sage); }
+  .spec-section .eyebrow{ color:var(--sage); }
+  .spec-section .eyebrow::before{ background:var(--sage); }
+
+  .dial-wrap{
+    display:flex; justify-content:center;
+    padding:20px 0 40px;
+  }
+  .dial{
+    position:relative;
+    width:min(560px, 92vw);
+    aspect-ratio:1/1;
+  }
+  .dial svg{ width:100%; height:100%; }
+  .dial-center{
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    width:180px;
+  }
+  .dial-center .big{
+    font-family:var(--font-display);
+    font-size:44px;
+    font-weight:600;
+    line-height:1;
+  }
+  .dial-center .small{
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--sage);
+    margin-top:8px;
+  }
+
+  .spec-node{
+    position:absolute;
+    width:150px;
+    text-align:center;
+  }
+  .spec-node .val{
+    font-family:var(--font-mono);
+    font-size:22px;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .spec-node .lbl{
+    font-size:12.5px;
+    color:var(--sage);
+    margin-top:4px;
+    line-height:1.4;
+  }
+  .spec-node.n1{ top:-4%; left:50%; transform:translateX(-50%); }
+  .spec-node.n2{ top:20%; right:-10%; }
+  .spec-node.n3{ bottom:20%; right:-10%; }
+  .spec-node.n4{ bottom:-4%; left:50%; transform:translateX(-50%); }
+  .spec-node.n5{ bottom:20%; left:-10%; }
+  .spec-node.n6{ top:20%; left:-10%; }
+
+  @media (max-width:760px){
+    .spec-section{ margin:0 12px; border-radius:20px; padding:64px 0; }
+    .dial{ display:none; }
+    .spec-list-mobile{ display:grid !important; }
+  }
+  .spec-list-mobile{
+    display:none;
+    grid-template-columns:1fr 1fr;
+    gap:28px 20px;
+    padding:0 24px;
+  }
+  .spec-list-mobile .val{ font-family:var(--font-mono); font-size:20px; font-weight:600; display:block; }
+  .spec-list-mobile .lbl{ font-size:12.5px; color:var(--sage); margin-top:4px; }
+
+  /* ===================== COMPARISON ===================== */
+  .compare-table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14.5px;
+  }
+  .compare-table th, .compare-table td{
+    padding:18px 20px;
+    text-align:left;
+    border-bottom:1px solid var(--line);
+  }
+  .compare-table th{
+    font-family:var(--font-mono);
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--grey);
+    font-weight:500;
+  }
+  .compare-table th.hl, .compare-table td.hl{
+    color:var(--brass);
+  }
+  .compare-table td.check::before{ content:'—'; color:var(--grey); }
+  .compare-table td.check.yes{ color:var(--sage-soft); }
+  .compare-table td.check.yes::before{ content:'✓'; }
+  .compare-table td.check.yes.brass{ color:var(--brass); }
+  .table-scroll{ overflow-x:auto; margin:0 -24px; padding:0 24px; }
+
+  /* ===================== TESTIMONIAL / STORY ===================== */
+  .story{
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:60px;
+    align-items:center;
+  }
+  .story-quote{
+    font-family:var(--font-display);
+    font-size:clamp(22px, 2.6vw, 30px);
+    line-height:1.4;
+    font-style:italic;
+  }
+  .story-quote span{ color:var(--brass); }
+  .story-attr{
+    margin-top:28px;
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    color:var(--grey);
+  }
+  .story-visual{
+    background:var(--ink-soft);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:36px;
+    aspect-ratio:4/3;
+    display:flex; flex-direction:column; justify-content:space-between;
+  }
+  .mini-chart{ width:100%; height:120px; }
+  .story-stat-row{ display:flex; justify-content:space-between; }
+  .story-stat-row .num{ font-family:var(--font-mono); font-size:26px; color:var(--brass); }
+  .story-stat-row .lbl{ font-size:11px; color:var(--grey); text-transform:uppercase; letter-spacing:0.06em; }
+
+  @media (max-width:860px){
+    .story{ grid-template-columns:1fr; }
+  }
+
+  /* ===================== SIGNUP FORM ===================== */
+  .signup-section{
+    background:linear-gradient(180deg, var(--ink) 0%, var(--ink-soft) 100%);
+    border-top:1px solid var(--line);
+  }
+  .signup-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+  }
+  .signup-copy h2{
+    font-size:clamp(30px, 4vw, 44px);
+    line-height:1.08;
+    margin-bottom:18px;
+  }
+  .signup-copy p{ color:var(--grey); font-size:15.5px; max-width:420px; }
+
+  .signup-form{
+    background:var(--ink-soft);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:40px;
+  }
+  .form-row{ margin-bottom:18px; }
+  .form-row label{
+    display:block;
+    font-family:var(--font-mono);
+    font-size:11.5px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--grey);
+    margin-bottom:8px;
+  }
+  .form-row input, .form-row select{
+    width:100%;
+    background:var(--ink);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:14px 16px;
+    color:var(--bone);
+    font-size:15px;
+    font-family:var(--font-body);
+    transition:border-color 0.2s;
+  }
+  .form-row input::placeholder{ color:#5A5652; }
+  .form-row input:focus, .form-row select:focus{
+    border-color:var(--brass);
+    outline:none;
+  }
+  .form-row input:invalid:not(:placeholder-shown){
+    border-color:#B85450;
+  }
+  .form-check{
+    display:flex; align-items:flex-start; gap:10px;
+    margin-bottom:24px;
+  }
+  .form-check input{ margin-top:3px; accent-color:var(--brass); width:auto; }
+  .form-check label{
+    font-size:13px; color:var(--grey);
+    text-transform:none; font-family:var(--font-body); letter-spacing:0;
+  }
+  .btn-submit{
+    width:100%;
+    background:var(--brass);
+    color:var(--ink);
+    padding:16px;
+    border-radius:10px;
+    font-size:14.5px; font-weight:600;
+    transition:background 0.2s, transform 0.2s;
+  }
+  .btn-submit:hover{ background:var(--brass-soft); transform:translateY(-1px); }
+  .btn-submit:disabled{ opacity:0.6; cursor:not-allowed; transform:none; }
+
+  .form-status{
+    margin-top:16px;
+    font-size:13.5px;
+    font-family:var(--font-mono);
+    display:none;
+  }
+  .form-status.show{ display:block; }
+  .form-status.ok{ color:var(--sage-soft); }
+  .form-status.err{ color:#C97C78; }
+
+  .form-fine{
+    font-size:11.5px; color:#5A5652; margin-top:16px; line-height:1.5;
+  }
+
+  @media (max-width:860px){
+    .signup-inner{ grid-template-columns:1fr; gap:40px; }
+    .signup-form{ padding:28px; }
+  }
+
+  /* ===================== FOOTER ===================== */
+  footer{
+    border-top:1px solid var(--line);
+    padding:56px 0 32px;
+  }
+  .footer-top{
+    display:flex; justify-content:space-between; align-items:flex-start;
+    flex-wrap:wrap; gap:40px;
+    margin-bottom:48px;
+  }
+  .footer-cols{ display:flex; gap:64px; flex-wrap:wrap; }
+  .footer-col h4{
+    font-family:var(--font-mono);
+    font-size:11.5px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--grey);
+    margin-bottom:16px;
+  }
+  .footer-col a{
+    display:block;
+    font-size:14px;
+    color:var(--bone);
+    margin-bottom:10px;
+    opacity:0.85;
+    transition:opacity 0.2s;
+  }
+  .footer-col a:hover{ opacity:1; color:var(--brass); }
+  .footer-bottom{
+    display:flex; justify-content:space-between; align-items:center;
+    padding-top:24px; border-top:1px solid var(--line);
+    font-size:12.5px; color:var(--grey);
+    flex-wrap:wrap; gap:12px;
+  }
+
+  /* ===================== SCROLL REVEAL ===================== */
+  .reveal{
+    opacity:0;
+    transform:translateY(24px);
+    transition:opacity 0.7s cubic-bezier(.2,.7,.2,1), transform 0.7s cubic-bezier(.2,.7,.2,1);
+  }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  /* mobile nav panel */
+  .mobile-panel{
+    position:fixed; inset:0;
+    background:var(--ink);
+    z-index:200;
+    display:none;
+    flex-direction:column;
+    padding:24px;
+  }
+  .mobile-panel.open{ display:flex; }
+  .mobile-panel-head{ display:flex; justify-content:space-between; align-items:center; margin-bottom:48px; }
+  .mobile-panel a{
+    font-family:var(--font-display);
+    font-size:28px;
+    padding:16px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .mobile-close{ width:24px; height:24px; position:relative; }
+  .mobile-close::before, .mobile-close::after{
+    content:''; position:absolute; top:50%; left:0; width:100%; height:2px; background:var(--bone);
+  }
+  .mobile-close::before{ transform:rotate(45deg); }
+  .mobile-close::after{ transform:rotate(-45deg); }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo"><span class="logo-ring"></span>EchoPulse</a>
+    <nav class="nav-links">
+      <a href="#features">Tính năng</a>
+      <a href="#specs">Thông số</a>
+      <a href="#compare">So sánh</a>
+      <a href="#signup">Đặt trước</a>
+    </nav>
+    <a href="#signup" class="nav-cta" style="display:none" id="navCtaDesktop">Đặt trước — $299</a>
+    <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Mở menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <div class="mobile-panel-head">
+    <span class="logo"><span class="logo-ring"></span>EchoPulse</span>
+    <button class="mobile-close" id="mobileClose" aria-label="Đóng menu"></button>
+  </div>
+  <a href="#features">Tính năng</a>
+  <a href="#specs">Thông số</a>
+  <a href="#compare">So sánh</a>
+  <a href="#signup">Đặt trước</a>
+</div>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-bg-glow" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow hero-eyebrow">Titanium · 2.4g · Không màn hình</p>
+      <h1>Cơ thể bạn đang<br>nói chuyện. <em>Hãy nghe.</em></h1>
+      <p class="lede">EchoPulse đo giấc ngủ, nhịp tim, nhiệt độ và độ hồi phục mỗi đêm — chính xác cấp lâm sàng, gọn trong một chiếc nhẫn bạn quên là mình đang đeo.</p>
+      <div class="hero-actions">
+        <a href="#signup" class="btn-primary">
+          Đặt trước — $299
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7H11M11 7L7 3M11 7L7 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#specs" class="btn-ghost">Xem thông số kỹ thuật</a>
+      </div>
+      <div class="hero-proof">
+        <div><span class="num">7 ngày</span><span class="label">Thời lượng pin</span></div>
+        <div><span class="num">100m</span><span class="label">Chống nước</span></div>
+        <div><span class="num">±0.1°C</span><span class="label">Độ chính xác nhiệt</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="ring-orbit">
+        <svg viewBox="0 0 400 400" aria-hidden="true">
+          <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(245,241,232,0.08)" stroke-width="1"/>
+          <circle cx="200" cy="200" r="120" fill="none" stroke="var(--brass)" stroke-width="14" stroke-linecap="round" stroke-dasharray="700 100" transform="rotate(-90 200 200)"/>
+          <circle cx="200" cy="200" r="120" fill="none" stroke="rgba(74,93,82,0.5)" stroke-width="14" stroke-linecap="round" stroke-dasharray="70 700" stroke-dashoffset="-620" transform="rotate(-90 200 200)"/>
+          <circle cx="200" cy="80" r="5" fill="var(--brass-soft)"/>
+        </svg>
+      </div>
+      <div class="hero-waveform">
+        <svg viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true">
+          <path class="wave-path" d="M0,30 L40,30 L55,10 L70,50 L85,30 L110,30 L125,15 L140,45 L155,30 L400,30" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MARQUEE ===================== -->
+<div class="marquee-strip">
+  <div class="marquee-track" aria-hidden="true">
+    <span>Titanium cấp hàng không</span><span>·</span>
+    <span>Cảm biến PPG thế hệ 4</span><span>·</span>
+    <span>7 ngày pin liên tục</span><span>·</span>
+    <span>Chống nước 100m</span><span>·</span>
+    <span>Không màn hình, không rung</span><span>·</span>
+    <span>Titanium cấp hàng không</span><span>·</span>
+    <span>Cảm biến PPG thế hệ 4</span><span>·</span>
+    <span>7 ngày pin liên tục</span><span>·</span>
+    <span>Chống nước 100m</span><span>·</span>
+    <span>Không màn hình, không rung</span><span>·</span>
+  </div>
+</div>
+
+<!-- ===================== FEATURES ===================== -->
+<section id="features">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Tính năng nổi bật</p>
+      <h2>Ba cảm biến. Một mục tiêu duy nhất: hiểu đúng cơ thể bạn.</h2>
+      <p>Không phải để đếm bước chân. EchoPulse được thiết kế để trả lời một câu hỏi mỗi sáng: hôm nay cơ thể bạn sẵn sàng đến đâu?</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 44 44" fill="none"><path d="M22 4C13 10 8 16 8 24C8 32.8 14.3 39 22 39C29.7 39 36 32.8 36 24C36 16 31 10 22 4Z" stroke="var(--brass)" stroke-width="1.6"/><path d="M16 24C16 27.3 18.7 30 22 30" stroke="var(--brass)" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Theo dõi giấc ngủ theo giai đoạn</h3>
+        <p>Phân biệt giấc ngủ sâu, REM và giấc ngủ nhẹ theo từng phút, dựa trên chuyển động vi mô và nhịp tim — không cần bạn làm gì cả.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 44 44" fill="none"><path d="M4 24H12L16 12L22 34L27 20L30 24H40" stroke="var(--brass)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>HRV & độ hồi phục</h3>
+        <p>Biến thiên nhịp tim đo mỗi đêm cho biết hệ thần kinh của bạn đã hồi phục đến đâu — chỉ số quan trọng hơn cả số bước chân.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 44 44" fill="none"><rect x="18" y="6" width="8" height="22" rx="4" stroke="var(--brass)" stroke-width="1.6"/><circle cx="22" cy="34" r="6" stroke="var(--brass)" stroke-width="1.6"/><path d="M22 14V28" stroke="var(--brass)" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Nhiệt độ cơ thể liên tục</h3>
+        <p>Phát hiện độ lệch nhiệt bất thường sớm hơn triệu chứng — hữu ích cho chu kỳ, ốm sớm, hoặc điều chỉnh cường độ tập luyện.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 44 44" fill="none"><rect x="6" y="16" width="32" height="16" rx="8" stroke="var(--brass)" stroke-width="1.6"/><circle cx="14" cy="24" r="4" fill="var(--brass)"/></svg>
+        </div>
+        <h3>7 ngày pin, sạc 20 phút</h3>
+        <p>Không cần tháo ra mỗi tối. Sạc nhanh bằng đế từ tính trong lúc pha cà phê buổi sáng là đủ cho cả tuần.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 44 44" fill="none"><path d="M22 6C14 6 8 14 8 22C8 30 14 38 22 38C30 38 36 30 36 22" stroke="var(--brass)" stroke-width="1.6" stroke-linecap="round"/><path d="M30 8L36 6L38 12" stroke="var(--brass)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Chống nước 100m</h3>
+        <p>Bơi, tắm, rửa bát — đeo liên tục không cần suy nghĩ. Vỏ titanium nguyên khối không có khớp nối yếu.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 44 44" fill="none"><rect x="8" y="8" width="28" height="28" rx="6" stroke="var(--brass)" stroke-width="1.6"/><path d="M16 22H28M22 16V28" stroke="var(--brass)" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Đồng bộ ứng dụng tức thì</h3>
+        <p>Dữ liệu chuyển sang ứng dụng EchoPulse qua Bluetooth ngay khi mở khóa điện thoại — không cần đồng bộ thủ công.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPECS (radial dial) ===================== -->
+<section id="specs">
+  <div class="spec-section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Thông số kỹ thuật</p>
+        <h2>Đọc như mặt đồng hồ, vì đó chính xác là hình dạng của nó.</h2>
+        <p>Sáu chỉ số. Sắp xếp quanh tâm — giống cách EchoPulse thực sự bao quanh ngón tay bạn.</p>
+      </div>
+
+      <div class="dial-wrap reveal">
+        <div class="dial">
+          <svg viewBox="0 0 400 400" aria-hidden="true">
+            <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(11,13,14,0.12)" stroke-width="1" stroke-dasharray="2 6"/>
+            <circle cx="200" cy="200" r="105" fill="none" stroke="rgba(11,13,14,0.08)" stroke-width="1"/>
+          </svg>
+          <div class="dial-center">
+            <div class="big">2.4g</div>
+            <div class="small">Trọng lượng tổng</div>
+          </div>
+          <div class="spec-node n1"><div class="val">7 ngày</div><div class="lbl">Thời lượng pin</div></div>
+          <div class="spec-node n2"><div class="val">100m</div><div class="lbl">Chống nước (10ATM)</div></div>
+          <div class="spec-node n3"><div class="val">±0.1°C</div><div class="lbl">Độ chính xác nhiệt</div></div>
+          <div class="spec-node n4"><div class="val">Ti-6Al-4V</div><div class="lbl">Hợp kim titanium y tế</div></div>
+          <div class="spec-node n5"><div class="val">99.2%</div><div class="lbl">Độ chính xác nhịp tim</div></div>
+          <div class="spec-node n6"><div class="val">6 cỡ</div><div class="lbl">Size 6–12 (US)</div></div>
+        </div>
+      </div>
+
+      <div class="spec-list-mobile">
+        <div><span class="val">7 ngày</span><span class="lbl">Thời lượng pin</span></div>
+        <div><span class="val">100m</span><span class="lbl">Chống nước</span></div>
+        <div><span class="val">±0.1°C</span><span class="lbl">Độ chính xác nhiệt</span></div>
+        <div><span class="val">Ti-6Al-4V</span><span class="lbl">Titanium y tế</span></div>
+        <div><span class="val">99.2%</span><span class="lbl">Độ chính xác nhịp tim</span></div>
+        <div><span class="val">6 cỡ</span><span class="lbl">Size 6–12 (US)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STORY / PROOF ===================== -->
+<section>
+  <div class="wrap story">
+    <div class="reveal">
+      <p class="story-quote">"Tôi từng nhìn đồng hồ để biết mình <span>đã ngủ đủ chưa</span>. Giờ tôi chỉ cần nhìn ứng dụng khi thức dậy — nhẫn đã ghi lại mọi thứ trong lúc tôi không để ý."</p>
+      <p class="story-attr">— Người dùng thử nghiệm beta, 6 tháng sử dụng</p>
+    </div>
+    <div class="story-visual reveal">
+      <svg class="mini-chart" viewBox="0 0 300 120" preserveAspectRatio="none" aria-hidden="true">
+        <polyline points="0,90 30,70 60,80 90,40 120,55 150,20 180,35 210,15 240,30 270,10 300,25" fill="none" stroke="var(--brass)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="0" y1="110" x2="300" y2="110" stroke="rgba(245,241,232,0.1)" stroke-width="1"/>
+      </svg>
+      <div class="story-stat-row">
+        <div><div class="num">+18%</div><div class="lbl">Điểm hồi phục TB</div></div>
+        <div><div class="num">42p</div><div class="lbl">Giấc ngủ sâu / đêm</div></div>
+        <div><div class="num">6.8</div><div class="lbl">Điểm sẵn sàng /10</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMPARE ===================== -->
+<section id="compare">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">So sánh</p>
+      <h2>Vì sao chọn nhẫn thay vì đồng hồ?</h2>
+      <p>Không phải để thay thế hoàn toàn — mà để đo chính xác hơn ở nơi bạn quên là mình đang đeo thiết bị.</p>
+    </div>
+    <div class="table-scroll reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Tiêu chí</th>
+            <th class="hl">EchoPulse</th>
+            <th>Đồng hồ thông minh</th>
+            <th>Vòng đeo tay thường</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Trọng lượng</td>
+            <td class="hl">2.4g</td>
+            <td>30–50g</td>
+            <td>15–25g</td>
+          </tr>
+          <tr>
+            <td>Thời lượng pin</td>
+            <td class="hl">7 ngày</td>
+            <td>1–2 ngày</td>
+            <td>4–5 ngày</td>
+          </tr>
+          <tr>
+            <td>Đo nhiệt độ liên tục</td>
+            <td class="check yes brass">✓</td>
+            <td class="check yes">✓</td>
+            <td class="check">—</td>
+          </tr>
+          <tr>
+            <td>Không màn hình / thông báo</td>
+            <td class="check yes brass">✓</td>
+            <td class="check">—</td>
+            <td class="check yes">✓</td>
+          </tr>
+          <tr>
+            <td>Chống nước 100m</td>
+            <td class="check yes brass">✓</td>
+            <td class="check">Thường 50m</td>
+            <td class="check">Thường 30m</td>
+          </tr>
+          <tr>
+            <td>Chất liệu vỏ</td>
+            <td class="hl">Titanium y tế</td>
+            <td>Nhôm / Thép</td>
+            <td>Nhựa / Silicone</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SIGNUP FORM ===================== -->
+<section id="signup" class="signup-section">
+  <div class="wrap signup-inner">
+    <div class="signup-copy reveal">
+      <p class="eyebrow">Đặt trước</p>
+      <h2>Lô đầu tiên giao tháng 9.<br>Giá đặt trước $299.</h2>
+      <p>Để lại email — bạn sẽ nhận thông báo sớm nhất khi EchoPulse mở đặt hàng chính thức, cùng ưu đãi giảm $50 dành riêng cho danh sách chờ.</p>
+    </div>
+
+    <form class="signup-form reveal" id="signupForm" novalidate>
+      <div class="form-row">
+        <label for="fullname">Họ và tên</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Nguyễn Văn A" required autocomplete="name">
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="ban@email.com" required autocomplete="email">
+      </div>
+      <div class="form-row">
+        <label for="ringsize">Cỡ nhẫn (nếu biết)</label>
+        <select id="ringsize" name="ringsize">
+          <option value="">Chưa biết — gửi hướng dẫn đo sau</option>
+          <option value="6">US 6</option>
+          <option value="7">US 7</option>
+          <option value="8">US 8</option>
+          <option value="9">US 9</option>
+          <option value="10">US 10</option>
+          <option value="11">US 11</option>
+          <option value="12">US 12</option>
+        </select>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">Tôi đồng ý nhận email cập nhật từ EchoPulse. Có thể hủy đăng ký bất kỳ lúc nào.</label>
+      </div>
+      <button type="submit" class="btn-submit" id="submitBtn">Tham gia danh sách chờ</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      <p class="form-fine">Không spam. Dữ liệu được gửi an toàn đến hệ thống CRM của chúng tôi và không chia sẻ cho bên thứ ba.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="#top" class="logo"><span class="logo-ring"></span>EchoPulse</a>
+        <p style="color:var(--grey); font-size:13.5px; margin-top:14px; max-width:260px;">Nhẫn thông minh titanium cho những ai muốn hiểu cơ thể mình mà không cần nhìn màn hình.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Sản phẩm</h4>
+          <a href="#features">Tính năng</a>
+          <a href="#specs">Thông số</a>
+          <a href="#compare">So sánh</a>
+        </div>
+        <div class="footer-col">
+          <h4>Công ty</h4>
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Blog nghiên cứu</a>
+          <a href="#">Liên hệ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Pháp lý</h4>
+          <a href="#">Chính sách riêng tư</a>
+          <a href="#">Điều khoản dịch vụ</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EchoPulse. Sản phẩm demo cho mục đích học tập.</span>
+      <span>Thiết kế & phát triển với HTML/CSS/JS thuần</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Mobile nav ---------- */
+  var toggle = document.getElementById('mobileToggle');
+  var closeBtn = document.getElementById('mobileClose');
+  var panel = document.getElementById('mobilePanel');
+  function openPanel(){ panel.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closePanel(){ panel.classList.remove('open'); document.body.style.overflow=''; }
+  toggle.addEventListener('click', openPanel);
+  closeBtn.addEventListener('click', closePanel);
+  panel.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closePanel); });
+
+  /* ---------- Scroll reveal (IntersectionObserver, cheap) ---------- */
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---------- Form handling: connects out to an external endpoint ---------- */
+  var ENDPOINT = 'https://formspree.io/f/your-form-id';
+
+  var form = document.getElementById('signupForm');
+  var statusEl = document.getElementById('formStatus');
+  var submitBtn = document.getElementById('submitBtn');
+
+  function showStatus(msg, ok){
+    statusEl.textContent = msg;
+    statusEl.className = 'form-status show ' + (ok ? 'ok' : 'err');
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    if (!form.checkValidity()){
+      showStatus('Vui lòng điền đầy đủ họ tên, email hợp lệ và đồng ý điều khoản.', false);
+      form.reportValidity();
+      return;
+    }
+
+    var payload = {
+      fullname: document.getElementById('fullname').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      ringsize: document.getElementById('ringsize').value,
+      source: 'landing-page',
+      timestamp: new Date().toISOString()
+    };
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Đang gửi...';
+
+    fetch(ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function(res){
+      if (res.ok){
+        showStatus('Cảm ơn! Bạn đã vào danh sách chờ — kiểm tra email để xác nhận.', true);
+        form.reset();
+      } else {
+        throw new Error('Server responded ' + res.status);
+      }
+    })
+    .catch(function(err){
+      showStatus('Không gửi được lúc này. Vui lòng thử lại hoặc email cho chúng tôi trực tiếp.', false);
+      console.error('EchoPulse signup error:', err);
+    })
+    .finally(function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Tham gia danh sách chờ';
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
