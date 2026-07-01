@@ -41,7 +41,6 @@ export default function Header({ theme, onToggleTheme }: HeaderProps) {
           {/* Logo */}
           <a
             href="#top"
-            aria-label="EXCELSIOR — back to top"
             className="flex items-center gap-2 font-sans text-lg font-bold tracking-tight text-ink dark:text-bone mr-2"
           >
             <Circle size={14} strokeWidth={2.5} className="text-ink dark:text-bone" />
